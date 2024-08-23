@@ -1,3 +1,9 @@
 //引入_开头的scss文件，不需要加上_
+//config
 @import "variables";
+//layout
 @import "reboot";
+//mixin
+@import "mixin";
+//button
+@import "../components/Button/style";
