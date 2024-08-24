@@ -37,7 +37,7 @@ describe("test Buttron component", () => {
   });
   it("should render a link when btnType equals link and href is provided", () => {
     const wrapper = render(
-      <Button btnType="link" href="http://www.baidu.com">
+      <Button btnType={"link" as ButtonType} href="http://www.baidu.com">
         Link
       </Button>
     );
