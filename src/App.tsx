@@ -9,7 +9,10 @@ import SubMenu from "./components/Menu/SubMenu";
 import Icon from "./components/Icon/icon";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons"; //引入所有图标
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//input
+import { Input } from "./components/input/input";
+//upload
+import { Upload } from "./components/Upload/upload";
 library.add(fas);
 const App: React.FC = () => {
   return (
@@ -83,6 +86,46 @@ const App: React.FC = () => {
           <Icon icon="coffee" theme="danger" size="10x"></Icon>
         </div>
         <hr />
+        <div>
+          {/* input */}
+          <Input
+            style={{ width: "300px" }}
+            placeholder="input with icon"
+            icon="search"
+          />
+          <Input
+            style={{ width: "300px" }}
+            defaultValue="large size"
+            size="lg"
+          />
+          <Input
+            style={{ width: "300px" }}
+            placeholder="small size"
+            size="sm"
+          />
+          <Input
+            style={{ width: "300px" }}
+            defaultValue="prepend text"
+            prepend="https://"
+          />
+          <Input
+            style={{ width: "300px" }}
+            defaultValue="google"
+            append=".com"
+          />
+        </div>
+        {/* Upaload */}
+        <div>
+          <Upload
+            action="url"
+            onProgress={() => {}}
+            onChange={() => {}}
+            onSuccess={() => {}}
+            onError={() => {}}
+          >
+            <Button>上传</Button>
+          </Upload>
+        </div>
       </header>
     </div>
   );
