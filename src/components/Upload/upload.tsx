@@ -179,9 +179,9 @@ export const Upload: FC<UploadProps> = (props) => {
     }
   };
   return (
-    <div className="curry-upload-component">
+    <div className="mgaw-upload-component">
       <div
-        className="curry-upload-input"
+        className="mgaw-upload-input"
         style={{ display: "inline-block" }}
         onClick={handleClick}
       >
@@ -197,7 +197,7 @@ export const Upload: FC<UploadProps> = (props) => {
           children
         )}
         <input
-          className="curry-file-input"
+          className="mgaw-file-input"
           style={{ display: "none" }}
           ref={fileInput}
           onChange={handleFileChange}

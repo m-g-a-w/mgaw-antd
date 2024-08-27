@@ -114,6 +114,7 @@ const App: React.FC = () => {
             append=".com"
           />
         </div>
+        <hr />
         {/* Upaload */}
         <div>
           <Upload

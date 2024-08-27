@@ -37,16 +37,16 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    action: "http://demo5298773.mockable.io/api/curry-design/upload",
+    action: "http://demo5298773.mockable.io/api/mgaw-design/upload",
   },
   render: () => (
     <Upload
-      action="http://demo5298773.mockable.io/api/curry-design/upload"
+      action="http://demo5298773.mockable.io/api/mgaw-design/upload"
       onChange={action("change")}
       name="file-name"
       // withCredentials={true}
       data={{ key: 1 }}
-      headers={{ "X-Author": "curry" }}
+      headers={{ "X-Author": "mgaw" }}
       // accept=".jpg"
       drag
       // beforeUpload={checkFileSize}
