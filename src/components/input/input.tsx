@@ -29,7 +29,7 @@ export interface InputProps
  *
  * ~~~js
  * // 这样引用
- * import { Input } from 'mgawship'
+ * import { Input } from 'mgaw'
  * ~~~
  * 支持 HTMLInput 的所有基本属性
  */
